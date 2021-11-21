@@ -5,3 +5,4 @@ django-mobile
 django-photologue
 django-tinymce
 pymysql
+django-redis

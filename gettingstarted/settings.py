@@ -120,3 +120,16 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
 
 django_heroku.settings(locals())
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": os.environ.get('redis://:paf561c5723271a992fe458541cc7b9c89e993ba47c1b14f49cf8e878b2f67c70@ec2-34-196-161-238.compute-1.amazonaws.com:13350'),
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "CONNECTION_POOL_KWARGS": {
+                "ssl_cert_reqs": None
+            },
+        }
+    }
+}

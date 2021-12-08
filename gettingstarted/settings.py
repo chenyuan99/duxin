@@ -1,6 +1,9 @@
 import os
 import django_heroku
 import dj_database_url
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -29,6 +32,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "hello",
+    'cloudinary'
 ]
 
 MIDDLEWARE = [
@@ -133,3 +137,10 @@ CACHES = {
         }
     }
 }
+
+# adding config
+cloudinary.config(
+  cloud_name = "htzbpuvhd",
+  api_key = "869774732276513",
+  api_secret = "s7DatAy_63o7JLEo_HB2CrbLqm0"
+)

@@ -6,3 +6,4 @@ django-photologue
 django-tinymce
 pymysql
 django-redis
+cloudinary

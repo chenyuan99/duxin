@@ -3,6 +3,8 @@ import django_heroku
 import dj_database_url
 import cloudinary
 import cloudinary.uploader
+
+
 import cloudinary.api
 
 
@@ -69,26 +71,17 @@ WSGI_APPLICATION = "gettingstarted.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'd84lh2q5k0gvqb',
-#         'USER': 'qnchsiwgwibdox',
-#         'PASSWORD': 'b92d37953ee04fc1349b73f7658afedfbd5fb6c9d2e31744c71179a8d5763be1',
-#         'HOST': 'ec2-34-192-173-173.compute-1.amazonaws.com',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {'default': dj_database_url.config(default='postgres://hzibrcvjbcnqca:cdf150b86d89aba308c3919db7b4e2fccbceebb27724d07ab92fe2ed289f9602@ec2-67-202-21-6.compute-1.amazonaws.com:5432/devhpjg92ojal1')}
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE" : "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3")
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE" : "django.db.backends.sqlite3",
+#         "NAME": os.path.join(BASE_DIR, "db.sqlite3")
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators

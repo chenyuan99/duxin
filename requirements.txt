@@ -8,3 +8,4 @@ pymysql
 django-redis
 cloudinary
 psycopg2-binary
+markdown

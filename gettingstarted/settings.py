@@ -71,17 +71,17 @@ WSGI_APPLICATION = "gettingstarted.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {'default': dj_database_url.config(default='postgres://hzibrcvjbcnqca:cdf150b86d89aba308c3919db7b4e2fccbceebb27724d07ab92fe2ed289f9602@ec2-67-202-21-6.compute-1.amazonaws.com:5432/devhpjg92ojal1')}
+# DATABASES = {'default': dj_database_url.config(default='postgres://hzibrcvjbcnqca:cdf150b86d89aba308c3919db7b4e2fccbceebb27724d07ab92fe2ed289f9602@ec2-67-202-21-6.compute-1.amazonaws.com:5432/devhpjg92ojal1')}
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE" : "django.db.backends.sqlite3",
-#         "NAME": os.path.join(BASE_DIR, "db.sqlite3")
-#     }
-# }
+DATABASES = {
+    "default": {
+        "ENGINE" : "django.db.backends.sqlite3",
+        "NAME": os.path.join(BASE_DIR, "db.sqlite3")
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators

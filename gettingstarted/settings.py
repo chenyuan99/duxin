@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "hello",
     'cloudinary',
+    'accounts',
     'blog.apps.BlogConfig',  # new
 ]
 

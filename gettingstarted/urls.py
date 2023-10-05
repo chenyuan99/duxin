@@ -27,6 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),  # new
     path("notex/", include('blog.urls')),
+    path('accounts/', include('accounts.urls')),
     # path('', users_views.IndexView.as_view(), name='index'),
     # path('login/', users_views.login, name='login'),
     # path('logout/', users_views.logout, name='logout'),
